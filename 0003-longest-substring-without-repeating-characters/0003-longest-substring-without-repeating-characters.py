@@ -2,7 +2,7 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         # 탐색을 위한 투포인터
         checker = []
-        head, rear, longest = 0, 0, 0
+        head = rear = longest = 0
         
         while rear < len(s):
             # 중복(재등장) 확인을 위함
