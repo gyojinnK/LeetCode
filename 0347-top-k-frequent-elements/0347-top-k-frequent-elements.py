@@ -1,9 +1,9 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         counter = collections.Counter(nums)
-        res = []
-        
+        res = []  
         h = []
+        
         for num in counter:
             heapq.heappush(h, [-counter[num], num])
 
